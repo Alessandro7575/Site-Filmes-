@@ -28,6 +28,6 @@ window.onload = verificarStatusDB;
     segundos = segundos < 10 ? '0' + segundos : segundos;
     var strHorario = horas + ':' + minutos + ':' + segundos;
     document.getElementById('relogio').textContent = strHorario;
-}
+  }
 
-setInterval(atualizarRelogio, 1000);
+  setInterval(atualizarRelogio, 1000);
