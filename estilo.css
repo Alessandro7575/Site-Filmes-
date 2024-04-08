@@ -1,0 +1,94 @@
+/* Estilo para o cabeçalho e rodapé */
+.header, .footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Estilo para o cabeçalho fixo no topo */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.relogio {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Estilo para o rodapé fixo na base */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha verticalmente */
+    align-items: center; /* Alinha horizontalmente */
+    min-height: 100vh; /* Altura mínima da viewport */
+    margin: 0; /* Remove a margem padrão */
+    padding-top: 60px; /* Ajuste para o cabeçalho */
+    padding-bottom: 60px; /* Ajuste para o rodapé */
+    box-sizing: border-box; /* Inclui padding no cálculo da altura */
+}
+.header, .footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form input,
+.login-form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .header, .footer {
+        padding: 5px 0;
+    }
+
+    body {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
