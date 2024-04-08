@@ -4,40 +4,44 @@ body {
     font-family: Arial, sans-serif;
 }
 .header {
-    background-color: #800202;
+    background-color: hsl(0, 0%, 20%);;
     color: white;
     padding: 10px 0;
     text-align: center;
 }
 .footer {
-    background-color: #800202;
+    background-color: hsl(0, 0%, 20%);
     color: white;
     padding: 10px 0;
-    position: absolute;
+    position: sticky;
     bottom: 0;
     width: 100%;
     text-align: center;
 }
 
-.titulo-container {
-    width: fit-content; /* Ajusta a largura ao conteúdo do título */
-    margin: auto; /* Centraliza o container */
-    background-color: pink; /* Cor de fundo rosa */
-    text-align: center; /* Alinha o texto ao centro */
-    padding: 10px; /* Espaçamento interno para o container */
-    margin-top: 10px; /* Espaço acima do container */
-}
-
-
-
-.video-container {
-    width: fit-content; /* Ajusta a largura ao conteúdo do vídeo */
-    margin: auto; /* Centraliza o container */
-}
-
 
 .videos-wrapper {
-    display: flex; /* Isso ativa o Flexbox */
-    justify-content: space-around; /* Isso alinha os itens com espaço igual entre eles */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around;
 }
 
+
+.video-card {
+    width: calc(33.33% - 20px); 
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+
+.video-card img {
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+}
+
+
+.video-card h2 {
+    margin-top: 10px;
+    text-align: center; 
+}

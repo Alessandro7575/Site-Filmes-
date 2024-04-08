@@ -1,6 +1,6 @@
 /* Estilo para o cabeçalho e rodapé */
 .header, .footer {
-    background-color: red;
+    background-color: hsl(0, 0%, 20%);;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -22,9 +22,13 @@
 
 /* Estilo para o rodapé fixo na base */
 .footer {
-    position: fixed;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    padding: 10px 0;
+    position: sticky;
     bottom: 0;
-    left: 0;
+    width: 100%;
+    text-align: center;
 }
 
 body {
@@ -39,7 +43,7 @@ body {
     box-sizing: border-box; /* Inclui padding no cálculo da altura */
 }
 .header, .footer {
-    background-color: red;
+    background-color: hsl(0, 0%, 20%);;
     color: white;
     text-align: center;
     padding: 10px 0;
